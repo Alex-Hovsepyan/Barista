@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barista - Reservation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_content">
+                <div>
+                    <img src="images/logo.png" alt="logo" />
+                    <h1>Barista</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Menu</a></li>
+                        <li><a href="index.html">Reviews</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <button><a href="#">Reservation <i class="fa-solid fa-arrow-right"></i></a></button>
+                    </ul>
+                </nav>
+                <div onclick="burger(event)" class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section style="background-image: url(images/background3.jpg);" class="reservation">
+        <div class="reservation_container">
+            <div class="reservation_content">
+                <div class="info">
+                    <div class="title">
+                        <em>Fill out the booking form</em>
+                        <h1>Book a table</h1>
+                    </div>
+                    <form action="/">
+                        <div>
+                            <input placeholder="Full Name" required/>
+                            <input placeholder="Phone: +37444648088" required/>
+                            <input type="time" placeholder="18:30" required/>
+                            <input type="date" required/>
+                            <input type="number" placeholder="Number of People" required/>
+                            <textarea placeholder="Comment(Optional)"></textarea>
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <img src="images/barman-with-fruits.jpg " alt="Reservation" />
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_content">
+                <h4>Where to find us?</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Bandra West, Mumbai, India</p>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+                <p>Copyright © Barista Cafe 2048 - Made by: <span>Alex</span></p>
+            </div>
+            <div class="footer_content">
+                <h4>Contact</h4>
+                <ul>
+                    <li><strong>Phone:</strong> +374-44648088</li>
+                    <li><strong>Email:</strong> alextyoou@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <h4>Opening Hours.</h4>
+                <ul>
+                    <li>Monday-Friday <span></span> <strong>9:00 - 18:00</strong></li>
+                    <li>Saturday <span></span> <strong>11:00 - 16:30</strong></li>
+                    <li>Sunday <span></span> <strong>Closed</strong></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        const images = [
+            'images/background1.jpg',
+            'images/background2.jpg',
+            'images/background3.jpg'
+        ]
+        const slider = document.querySelector('.home')
+        let item = 0;
+        slider.style.backgroundImage = `url(${images[item]})`
+        setInterval(() => {
+            if(item >= images.length - 1) {
+                item = 0
+            }
+            else {
+                item += 1
+            }
+            slider.style.backgroundImage = `url(${images[item]})`
+        }, 3000);
+    </script>
+</body>
+</html>

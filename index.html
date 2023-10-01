@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barista Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_content">
+                <div>
+                    <img src="images/logo.png" alt="logo" />
+                    <h1>Barista</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#review">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <button><a href="reservation.html">Reservation <i class="fa-solid fa-arrow-right"></i></a></button>
+                    </ul>
+                </nav>
+                <div onclick="burger(event)" class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <div class="home_content">
+            <h6>welcome to Barista.co</h6>
+            <h1>Cafe Klang</h1>
+            <p>your favourite coffee daily lives.</p>
+            <div>
+                <button><a href="#about">Our Story</a></button>
+                <button><a href="#menu">Check Menu</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about_container">
+            <div class="left">
+                <video autoplay loop muted poster>
+                    <source src="videos/pexels-mike-jones-9046237.mp4" />
+                </video>
+                <div>
+                    <h4>We Started Since 2009.<br />Best Cafe in Klang.</h4>
+                </div>
+            </div>
+            <div class="right">
+                <em>Barista.co</em>
+                <h1>Cafe KL</h1>
+                <p>The café had been in the town for as long as anyone could remember, and it had become a beloved institution among the locals.</p>
+                <br>
+                <p>The café was run by a friendly and hospitable couple, Mr. and Mrs. Johnson. Barista Cafe is the best cafe</p>
+                <button><a href="#menu">Our Menu</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="members">
+        <div class="title">
+            <em>Creative Baristas</em>
+            <h1>Meet People</h1>
+        </div>
+        <div class="members_container">
+            <div style="background-image: url(images/member1.jpg);" class="members_content">
+                <div class="info">
+                    <div>
+                        <h2>Steve</h2>
+                        <span>Boss</span>
+                    </div>
+                    <p>your favourite coffee daily lives tempor.</p>
+                </div>
+            </div>
+            <div style="background-image: url(images/member2.jpg);" class="members_content">
+                <div class="info">
+                    <div>
+                        <h2>Sandra</h2>
+                        <span>Manager</span>
+                    </div>
+                    <p>your favourite coffee daily lives tempor.</p>
+                </div>
+            </div>
+            <div style="background-image: url(images/member3.jpg);" class="members_content">
+                <div class="info">
+                    <div>
+                        <h2>Michelle</h2>
+                        <span>Junior</span>
+                    </div>
+                    <p>your favourite coffee daily lives tempor.</p>
+                </div>
+            </div>
+            <div style="background-image: url(images/member4.jpg);" class="members_content">
+                <div class="info">
+                    <div>
+                        <h2>Steve</h2>
+                        <span>Boss</span>
+                    </div>
+                    <p>your favourite coffee daily lives tempor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-image: url(images/background2.jpg);" id="menu">
+        <div class="menu_container">
+            <div class="menu_content">
+                <div class="title">
+                    <em>Delicious Menu</em>
+                    <h1>Breakfast</h1>
+                </div>
+                <ul>
+                    <li>
+                        <div class="info">
+                            <h2>Pancakes</h2>
+                            <span>$12.50</span>
+                        </div>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <h2>Toasted Waffle</h2>
+                            <div class="new_price">
+                                <span>$16.50</span>
+                                <span>$12.00</span>
+                            </div>
+                        </div>
+                        <p>Brewed coffee and steamed milk</p>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <div class="recommend">
+                                <h2>Fried Chips</h2>
+                                <div>Recommend</div>
+                            </div>
+                            <span>$15.00</span>
+                        </div>
+                        <p>Rich Milk and Foam</p>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <h2>Pancakes</h2>
+                            <span>$12.50</span>
+                        </div>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <h2>Banana Cakes</h2>
+                            <span>$18.00</span>
+                        </div>
+                        <p>Rich Milk and Foam</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu_content">
+                <div class="title">
+                    <em>Favourite Menu</em>
+                    <h1>Coffee</h1>
+                </div>
+                <ul>
+                    <li>
+                        <div class="info">
+                            <h2>Latte</h2>
+                            <div class="new_price">
+                                <span>$12.50</span>
+                                <span>$7.50</span>
+                            </div>
+                        </div>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <div class="recommend">
+                                <h2>White Coffee</h2>
+                                <div>Recommend</div>
+                            </div>
+                            <span>$5.90</span>
+                        </div>
+                        <p>Brewed coffee and steamed milk</p>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <h2>Chocolate Milk</h2>
+                            <span>$5.50</span>
+                        </div>
+                        <p>Rich Milk and Foam</p>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <h2>Greentea</h2>
+                            <span>$7.50</span>
+                        </div>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <h2>Dark Chocolate</h2>
+                            <span>$7.25</span>
+                        </div>
+                        <p>Rich Milk and Foam</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="review">
+        <div class="title">
+            <em>Reviews by Customers</em>
+            <h1>Testimonials</h1>
+        </div>
+        <div class="review_container">
+            <div class="review_content">
+                <div style="background-image: url(images/review-background.jpg);" class="top">
+                    <div class="top_content">
+                        <img src="images/review1.jpg" alt="profile image" />
+                        <div>
+                            <h4>Sandra</h4>
+                            <em>Customers</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="rating">
+                        <span><span><strong>4.5</strong> Rating</span></span>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="review_content">
+                <div style="background-image: url(images/review-background.jpg);" class="top">
+                    <div class="top_content">
+                        <img src="images/review2.jpg" alt="profile image" />
+                        <div>
+                            <h4>Sandra</h4>
+                            <em>Customers</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="rating">
+                        <span><span><strong>4.5</strong> Rating</span></span>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="review_content">
+                <div style="background-image: url(images/review-background.jpg);" class="top">
+                    <div class="top_content">
+                        <img src="images/review3.jpg" alt="profile image" />
+                        <div>
+                            <h4>Sandra</h4>
+                            <em>Customers</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="rating">
+                        <span><strong>4.5</strong> Rating</span>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(188, 108, 37, 1)), url(images/background3.jpg)" id="contact">
+        <div class="title">
+            <em>Say Hello</em>
+            <h1>Contact</h1>
+        </div>
+        <div class="contact_container">
+            <form action="/">
+                <div>
+                    <label for="name">Name</label>
+                    <input placeholder="Alex" name="name" required/>
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" placeholder="alextyoou@gmail.com" required>
+                </div>
+                <div>
+                    <label for="message">How can we help?</label>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <button>Send Message</button>
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth" frameborder="0"></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_content">
+                <h4>Where to find us?</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Bandra West, Mumbai, India</p>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+                <p>Copyright © Barista Cafe 2048 - Made by: <span>Alex</span></p>
+            </div>
+            <div class="footer_content">
+                <h4>Contact</h4>
+                <ul>
+                    <li><strong>Phone:</strong> +374-44648088</li>
+                    <li><strong>Email:</strong> alextyoou@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <h4>Opening Hours.</h4>
+                <ul>
+                    <li>Monday-Friday <span></span> <strong>9:00 - 18:00</strong></li>
+                    <li>Saturday <span></span> <strong>11:00 - 16:30</strong></li>
+                    <li>Sunday <span></span> <strong>Closed</strong></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        const images = [
+            'images/background1.jpg',
+            'images/background2.jpg',
+            'images/background3.jpg'
+        ]
+        const slider = document.getElementById('home')
+        let item = 0;
+        slider.style.backgroundImage = `url(${images[item]})`
+        setInterval(() => {
+            if(item >= images.length - 1) {
+                item = 0
+            }
+            else {
+                item += 1
+            }
+            slider.style.backgroundImage = `url(${images[item]})`
+        }, 3000);
+    </script>
+</body>
+</html>
